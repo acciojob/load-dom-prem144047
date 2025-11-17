@@ -1,3 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.body.innerHTML = "DOM load success";
-});
+document.addEventListener("DOM is loaded" function () {
+		const messageEliment = document.createElement("p");
+		messageEliment.textContent = "DOM load success";
+
+		document.body.appendChield(messageEliment);
+	});
