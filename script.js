@@ -1,7 +1,6 @@
-document.addEventListener("DOM is loaded"),
-	function () {
-		const messageEliment = document.createElement("p");
-		messageEliment.textContent = "DOM load success";
-
-		document.body.appendChield(messageEliment);
-	});
+describe('DOM Load Test', () => {
+    it('should display "DOM load success" on DOM load', () => {
+        cy.visit(baseUrl);
+        cy.contains('DOM load success').should('exist');
+    });
+});
