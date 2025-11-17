@@ -1,6 +1,3 @@
-describe('DOM Load Test', () => {
-    it('should display "DOM load success" on DOM load', () => {
-        cy.visit(baseUrl);
-        cy.contains('DOM load success').should('exist');
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.innerHTML = "DOM load success";
 });
